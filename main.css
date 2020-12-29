@@ -13,73 +13,92 @@ body {
      height: 100vh;
      background: url(assets/Balassa%20Istv%D0%B0n_2.jpg) center;
      background-size: cover;
-     display: flex;
+     display: inline-flex;
      justify-content: center;
      align-items: center; 
      font-size: 100%;
      color: #444;
+
 }
 .box {
-    width: 400px;
+    width: 1000px;
     height: 600px;
-    background-color:rgba(250, 248, 247,.7);
-    padding: 20px;
-    margin: 0 auto;
+    background-color: rgb(77, 77, 77,.5);
     text-align: center;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
 }
 img {
-  width: 220px;
-  height: 220px;
-  margin-top: -60px; 
-  transition: all 0.5s ease-in-out;
-  filter: brightness(.8);
+    width: 38%;
+    filter: brightness(.8);
+    float: left;
+    margin: 30px;
+    margin-top: 80px;
 }
 img:hover {
-  transform: scale(1.4);
+  transform: scale(1.1);
   filter: grayscale(20%);
+}
+.vl {
+  border-left: 10px solid #ffcc00;
+  height:150px;
+  left: 50%;
+  margin-top: 100px;
+    float: right;
+}
+ hr {
+  border-top: 10px solid #ffcc00;
+      width:150px;
+     position: absolute;
+     margin-top: 80px;
+    margin-left: 500px;
 }
 .name {
     font-family: Montserrat, sans-serif;
     font-style: bold;
-    font-size: 25px;
-    text-transform: uppercase; 
-    margin-top: 50px;
-    color: aqua;
+    font-size: 40px;
+    margin-top: 120px;
+    color: #ffcc00;
+}
+h1{
+   text-transform: uppercase; 
 }
 h2 {
-    font-size: 13px;
-    color: gray;
+    font-size: 22px;
+    color: #888;
     padding: 5px;
 }
 .text {
-      font-size: 20px;
-      margin: 15px;
-      margin-top: 10px;
+     width: 50%;
+     float: right;
+      font-size: 22px;
+      margin: 25px;
       line-height: 30px;
-      background:aqua; 
       padding: 15px;
-      color: gray;
+      color: white;
 }  
 .name,.text,.links{
-    margin-bottom: 10%;
+    margin-bottom: 2%;
 }
 .links{
-    margin-bottom: 20%;
+    margin-bottom: 25%;
 }
 ul {
   list-style-type: none;
 }
 li {
-  display: inline;
+  display: inline-block;
 }
 .social-icon {
-     color: rgba(0,0,0,.7);
-     padding: 25px;
+     color: #ffcc00;
+     padding: 35px;
+    display: block;
+    margin-bottom: 40px;
+    
 }
   .social-icon:hover {
-  color: aqua;
+  transform: scale(1.2);
+      color: white;
 }
 
